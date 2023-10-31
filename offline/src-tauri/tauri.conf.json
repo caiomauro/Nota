@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "crimson-eagle-notes-app",
+    "productName": "Nota",
     "version": "0.1.0"
   },
   "tauri": {
@@ -59,7 +59,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "Crimson Eagle Notes",
+        "title": "Nota",
         "width": 800
       }
     ]

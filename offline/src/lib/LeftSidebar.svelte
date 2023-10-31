@@ -121,6 +121,7 @@
 				<Tooltip arrow={false}>Delete Notes</Tooltip>
 			</button>
 		</a>
+		<!--
 		<a
 			href="/settings"
 			class="m-3 rounded bg-transparent text-slate-700 hover:bg-slate-700 hover:text-slate-100 dark:text-gray-400 dark:hover:bg-gray-400 dark:hover:text-gray-700"
@@ -134,6 +135,7 @@
 			</svg>
 			<Tooltip arrow={false}>Settings</Tooltip>
 		</a>
+
 		<a
 			href="/profile"
 			class="m-3 rounded bg-transparent text-slate-700 hover:bg-slate-700 hover:text-slate-100 dark:text-gray-400 dark:hover:bg-gray-400 dark:hover:text-gray-700"
@@ -152,5 +154,6 @@
 			</svg>
 			<Tooltip arrow={false}>Profile</Tooltip>
 		</a>
+		-->
 	</div>
 </div>
