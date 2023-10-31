@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { Input } from 'flowbite-svelte';
+	import { Input, Tooltip } from 'flowbite-svelte';
 	import { searchQuery } from './stores/search';
 	import { DarkMode } from 'flowbite-svelte';
 </script>
@@ -25,6 +25,7 @@
 			>
 				<button type="submit" class="outline-none" slot="right">
 					<Icon icon="simple-line-icons:magnifier" class="h-4 w-4" />
+					<Tooltip placement="bottom" arrow={false}>Search for notes</Tooltip>
 				</button>
 			</Input>
 		</form>
