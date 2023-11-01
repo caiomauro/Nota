@@ -103,7 +103,7 @@
 						clip-rule="evenodd"
 					/>
 				</svg>
-				<Tooltip arrow={false}>Star Note</Tooltip>
+				<Tooltip arrow={false}>View Favorite Notes</Tooltip>
 			</a>
 		</button>
 		<a href="/delete">

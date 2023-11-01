@@ -1,14 +1,18 @@
 <script lang="ts">
 	import { BottomNav, BottomNavItem, Tooltip } from 'flowbite-svelte';
+	import { page } from '$app/stores';
+	$: activeUrl = $page.url.pathname;
 </script>
 
+
 <BottomNav
+	{activeUrl}
 	position="fixed"
 	navType="application"
 	classOuter="md:hidden w-full z-50 border-gray-200 dark:bg-gray-700 dark:border-gray-600"
 	classInner="grid-cols-5"
 >
-	<BottomNavItem btnName="Home" appBtnPosition="left">
+	<BottomNavItem btnName="Home" appBtnPosition="left" href="/">
 		<svg
 			class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
 			fill="currentColor"
@@ -22,6 +26,7 @@
 		</svg>
 		<Tooltip arrow={false}>Home</Tooltip>
 	</BottomNavItem>
+	<!--
 	<BottomNavItem btnName="Wallet" appBtnPosition="middle">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +41,7 @@
 		</svg>
 		<Tooltip arrow={false}>Settings</Tooltip>
 	</BottomNavItem>
+	-->	
 	<div class="flex items-center justify-center">
 		<BottomNavItem
 			btnName="Create new item"
@@ -58,7 +64,8 @@
 			<Tooltip arrow={false}>Create new Note</Tooltip>
 		</BottomNavItem>
 	</div>
-	<BottomNavItem btnName="Settings" appBtnPosition="middle">
+	
+	<BottomNavItem btnName="Settings" appBtnPosition="middle" href="/favorites">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24"
@@ -72,6 +79,7 @@
 		</svg>
 		<Tooltip arrow={false}>Bookmarks</Tooltip>
 	</BottomNavItem>
+	<!--
 	<BottomNavItem btnName="Profile" appBtnPosition="right">
 		<svg
 			class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
@@ -88,4 +96,5 @@
 		</svg>
 		<Tooltip arrow={false}>Profile</Tooltip>
 	</BottomNavItem>
+	-->
 </BottomNav>

@@ -13,9 +13,7 @@
 		<BreadcrumbItem>Favorites</BreadcrumbItem>
 	</Breadcrumb>
 	<h1 class="my-2 text-2xl font-bold dark:text-gray-200">Favorites</h1>
-	<div
-		class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4"
-	>
+	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 		{#each starredNotes as note (note.id)}
 			<Note {note} />
 		{/each}
