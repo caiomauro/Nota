@@ -61,7 +61,7 @@
         "resizable": true,
         "title": "Nota",
         "width": 800,
-        "minWidth": 760,
+        "minWidth": 780,
         "minHeight": 300
 
       }
